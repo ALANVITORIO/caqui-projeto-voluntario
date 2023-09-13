@@ -20,6 +20,7 @@ const EsseAno = () => {
       <div className="d-flex flex-wrap justify-content-center cartela">
         {Array.from({ length: 100 }, (_, i) => i + 1).map((numero) => (
           <div
+            key={numero}  // Adicionada a propriedade key
             className={`numero m-2 border rounded ${pegos.includes(numero) ? 'bg-secondary inativo' : ''}`}
             onClick={() => handleNumeroClick(numero)}
           >
