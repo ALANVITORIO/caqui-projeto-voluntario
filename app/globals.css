@@ -1,5 +1,12 @@
 /* globals.css */
 
+.blue-divider {
+  width: 100px;
+  height: 4px;
+  background-color: blue;
+  margin: 10px auto; /* Centraliza o divisor horizontalmente e adiciona um pouco de espaço acima e abaixo */
+}
+
 .cartela {
   border: 2px solid black;
   padding: 20px;
