@@ -1,7 +1,23 @@
 /* globals.css */
+/* styles/globals.css */
+
 body {
-  background-color: aqua;
+  margin: 0;
+  padding: 0;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Isto faz com que a imagem fique fixa enquanto o conteúdo rola */
 }
+
+.bg-color-meu {
+  background-color: #9ae9ea;
+}
+
+p {
+  font-size: 1.25em;
+}
+
 .blue-divider {
   width: 100px;
   height: 4px;
