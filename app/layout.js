@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import './globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
   title: 'Rifa do Caqui',
@@ -7,11 +7,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    // Importa o Bootstrap JS somente no lado do cliente
-    import('bootstrap/dist/js/bootstrap.bundle.min');
-  }, []);
-
   return (
     <html lang="pt-BR">
       <body>{children}</body>
