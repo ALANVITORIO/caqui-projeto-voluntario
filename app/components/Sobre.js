@@ -48,7 +48,7 @@ export default function Sobre() {
             <Image
               src="/chacara.jpg"
               alt="Foto da comunidade"
-              width={900} // Defina as dimensões que preferir
+              width={360} // Defina as dimensões que preferir
               height={750}
               className="rounded-3"
             />
