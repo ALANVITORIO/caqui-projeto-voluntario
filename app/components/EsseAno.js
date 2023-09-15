@@ -23,10 +23,10 @@ const EsseAno = () => {
       <div className="row">
         <div className="col-md-6">
           <Image
-            src="/chacara.jpg"
+            src="/kit.png"
             alt="Foto do kit da Chácara"
-            width={500}
-            height={400}
+            width={1080}
+            height={1080}
             layout="responsive"
           />
         </div>

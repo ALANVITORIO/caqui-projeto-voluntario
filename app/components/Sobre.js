@@ -1,14 +1,15 @@
 import React from 'react';
-import Image from 'next/image'; // Importar o componente Image de next/image
+import Image from 'next/image';
 
 export default function Sobre() {
   return (
-    <section id="Sobre" className="">
+    <section id="Sobre" className="pt-5">
       <div className="container pt-3">
         <div className="text-center">
-          <h2 className="teste">A comunidade do Caqui</h2>
+          <h2 className="teste ">A comunidade do Caqui</h2>
           <div className="blue-divider"></div>
         </div>
+        <div className="pt-5"></div>
         <div className="row">
           {/* Coluna para o texto */}
           <div className="col-md-6">
@@ -42,16 +43,20 @@ export default function Sobre() {
               </p>
             </div>
           </div>
-
           {/* Coluna para a foto */}
           <div className="col-md-6 pt-3">
-            <Image
-              src="/chacara.jpg"
-              alt="Foto da comunidade"
-              width={360} // Defina as dimensões que preferir
-              height={750}
-              className="rounded-3"
-            />
+            <div
+              style={{ position: 'relative', width: '100%', height: 'auto' }}
+            >
+              <Image
+                src="/chacara.jpg"
+                alt="Foto da comunidade"
+                layout="responsive"
+                width={1081} // Tamanho original da imagem
+                height={801} // Tamanho original da imagem
+                className="responsive-img"
+              />
+            </div>
           </div>
         </div>
       </div>

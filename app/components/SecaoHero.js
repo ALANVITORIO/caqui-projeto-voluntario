@@ -19,7 +19,7 @@ const SecaoHero = () => {
       <div className="text-center">
         <h1
           style={{
-            fontSize: '6rem',
+            fontSize: '3.25rem',
             fontFamily: "'Comic Sans MS', cursive, sans-serif",
             color: '#003CC3',
             textShadow: '3px 3px 2px rgba(0, 0, 0, 5)', // Borda nas letras
@@ -30,7 +30,7 @@ const SecaoHero = () => {
         <p
           className="lead"
           style={{
-            fontSize: '3rem',
+            fontSize: '2rem',
             fontFamily: "'Comic Sans MS', cursive, sans-serif",
             color: '#F5FDFF',
             textShadow: '2px 2px 5px rgba(0, 0, 0, 8)', // Borda nas letras
@@ -45,7 +45,7 @@ const SecaoHero = () => {
         <p
           className="lead text-dark mb-5"
           style={{
-            fontSize: '2rem',
+            fontSize: '1.8rem',
             fontFamily: "'Comic Sans MS', cursive, sans-serif",
             textShadow: '2px 2px 1px rgba(245, 253, 255, .8)', //
 
@@ -57,7 +57,7 @@ const SecaoHero = () => {
         <button
           className="btn btn-success mb-5"
           style={{
-            fontSize: '1.5rem',
+            fontSize: '1.2rem',
           }}
         >
           QUERO AJUDAR

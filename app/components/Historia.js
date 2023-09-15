@@ -15,10 +15,10 @@ const Historia = () => {
           <div className="d-flex justify-content-center align-items-center flex-column flex-md-row">
             <div className="col-6 col-md-3">
               <Image
-                src="/foto1-20.webp"
+                src="/rr.jpg"
                 alt="Logo de rrgomes.toposdeboloabc"
-                width={150}
-                height={150}
+                width={250}
+                height={250}
                 className="rounded-circle"
               />
             </div>
@@ -50,10 +50,10 @@ const Historia = () => {
           <div className="d-flex justify-content-center align-items-center flex-column flex-md-row">
             <div className="col-6 col-md-3">
               <Image
-                src="/foto2-20.webp"
+                src="/trigo.jpg"
                 alt="Logo de trigolat"
-                width={150}
-                height={150}
+                width={250}
+                height={250}
                 className="rounded-circle"
               />
             </div>
