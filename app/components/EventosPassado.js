@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 
 import Image from 'next/image';
+import Divider from './Divider';
 
 const imagensPorAno = {
   2022: [
@@ -29,15 +30,15 @@ export default function EventosPassados() {
     <section id="EventosPassados">
       <div className="container pt-5">
         <div className="text-center mb-5">
-          <h2 className="text-center">Projeto Família Amor Eterno</h2>
+          <h2 className="text-center teste">Projeto Família Amor Eterno</h2>
           <div className="blue-divider"></div>
         </div>
         <div className="row">
           <div className="col-md-6 d-flex justify-content-center align-items-center">
             <Image
-              src="/foto1-20.webp"
+              src="/equipe.webp"
               alt="Background Image"
-              width={500}
+              width={600}
               height={300}
               layout="responsive"
             />
@@ -61,15 +62,19 @@ export default function EventosPassados() {
             </div>
           </div>
         </div>
+        <div className="pt-5"></div>
+        <Divider />
+        <div className="pt-5"></div>
         <div className="row">
           <div className="col-2"></div>
           <div className="col-8">
             {Object.keys(imagensPorAno).map((ano) => (
               <div key={ano}>
-                <h2 className="text-center mb-2 mt-3 ">
+                <h2 className="text-center mb-2 mt-3 teste ">
                   Campanha de doação de {ano}
                 </h2>
                 <div className="blue-divider"></div>
+                <div className="pt-3"></div>
                 <CustomCarousel images={imagensPorAno[ano]} />
               </div>
             ))}
@@ -77,6 +82,7 @@ export default function EventosPassados() {
           <div className="col-2"></div>
         </div>
       </div>
+      <div className="pt-5"></div>
     </section>
   );
 }

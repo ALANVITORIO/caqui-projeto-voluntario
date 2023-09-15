@@ -19,10 +19,10 @@ const SecaoHero = () => {
       <div className="text-center">
         <h1
           style={{
-            fontSize: '4rem',
+            fontSize: '6rem',
             fontFamily: "'Comic Sans MS', cursive, sans-serif",
-            color: '#1E90FF',
-            textShadow: '3px 3px 2px rgba(0, 0, 0, 0.3)', // Borda nas letras
+            color: '#003CC3',
+            textShadow: '3px 3px 2px rgba(0, 0, 0, 5)', // Borda nas letras
           }}
         >
           DIA DAS CRIANÇAS
@@ -30,10 +30,10 @@ const SecaoHero = () => {
         <p
           className="lead"
           style={{
-            fontSize: '2rem',
+            fontSize: '3rem',
             fontFamily: "'Comic Sans MS', cursive, sans-serif",
-            color: 'black',
-            textShadow: '2px 2px 1px rgba(0, 0, 0, 0.2)', // Borda nas letras
+            color: '#F5FDFF',
+            textShadow: '2px 2px 5px rgba(0, 0, 0, 8)', // Borda nas letras
           }}
         >
           Projeto família amor eterno 2023
@@ -47,7 +47,9 @@ const SecaoHero = () => {
           style={{
             fontSize: '2rem',
             fontFamily: "'Comic Sans MS', cursive, sans-serif",
-            textShadow: '2px 2px 1px rgba(255, 255, 255, 0.2)', // Borda nas letras
+            textShadow: '2px 2px 1px rgba(245, 253, 255, .8)', //
+
+            fontWeight: 'bold',
           }}
         >
           Ajude a fazer um Dia das Crianças mais feliz
@@ -58,7 +60,7 @@ const SecaoHero = () => {
             fontSize: '1.5rem',
           }}
         >
-          Quero ajudar
+          QUERO AJUDAR
         </button>
       </div>
     </div>

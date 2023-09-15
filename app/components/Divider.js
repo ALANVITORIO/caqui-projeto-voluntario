@@ -12,6 +12,11 @@ const Divider = () => {
       <div className={styles.cloud} style={{ left: '900px' }}></div>
       <div className={styles.cloud} style={{ left: '1050px' }}></div>
       <div className={styles.cloud} style={{ left: '1200px' }}></div>
+      <div className={styles.cloud} style={{ left: '1350px' }}></div>
+      <div className={styles.cloud} style={{ left: '1500px' }}></div>
+      <div className={styles.cloud} style={{ left: '1650px' }}></div>
+      <div className={styles.cloud} style={{ left: '1800px' }}></div>
+      <div className={styles.cloud} style={{ left: '1950px' }}></div>
     </div>
   );
 };

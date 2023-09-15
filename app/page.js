@@ -19,9 +19,9 @@ export default function Home() {
         <EventosPassados />
         <Divider />
         <EsseAno />
-        <div className="pt-5">
-          <Divider />
-        </div>
+
+        <Divider />
+
         <Historia />
         <Divider />
         <Finalizar />
