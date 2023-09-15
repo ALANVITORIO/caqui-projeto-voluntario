@@ -7,16 +7,20 @@ body {
   background-image: url('/01.jpg');
 
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Isto faz com que a imagem fique fixa enquanto o conteúdo rola */
 }
 
 .bg-color-meu {
-  background-color: #9ae9ea;
+  background-color: #f5fdff;
+}
+
+h2.teste {
+  color: #035a42;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 .blue-divider {

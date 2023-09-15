@@ -4,10 +4,10 @@ import Image from 'next/image'; // Importar o componente Image de next/image
 
 export default function Sobre() {
   return (
-    <section id="Sobre" className="bg-color-meu">
+    <section id="Sobre" className="">
       <div className="container pt-3">
         <div className="text-center">
-          <h2 className="">A comunidade do Caqui</h2>
+          <h2 className="teste">A comunidade do Caqui</h2>
           <div className="blue-divider "></div>{' '}
         </div>
         <div className="row">
