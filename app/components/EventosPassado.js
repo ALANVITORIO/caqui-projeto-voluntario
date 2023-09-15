@@ -43,20 +43,22 @@ export default function EventosPassados() {
             />
           </div>
           <div className="col-md-6">
-            <p>
-              O projeto conta com diversas pessoas que se mobilizaram para
-              ajudar as familias carentes de nossa cidade.
-            </p>
-            <p>
-              A cada ano o projeto vai recebendo mais ajuda e mais pessoas se
-              conscientizando da importância de ajudar o próximo.
-            </p>
-            <p>
-              A campanha de 2020 foi particularmente difícil, pois o mundo todo
-              estava passando por uma pandemia e muitas pessoas perderam seus
-              empregos e não tinham como sustentar suas famílias. Mesmo assim,
-              conseguimos coletar até brinquedo para as crianças.
-            </p>
+            <div className="bordered-text">
+              <p className="divided-paragraph">
+                O projeto conta com diversas pessoas que se mobilizaram para
+                ajudar as familias carentes de nossa cidade.
+              </p>
+              <p className="divided-paragraph">
+                A cada ano o projeto vai recebendo mais ajuda e mais pessoas se
+                conscientizando da importância de ajudar o próximo.
+              </p>
+              <p className="divided-paragraph">
+                A campanha de 2020 foi particularmente difícil, pois o mundo
+                todo estava passando por uma pandemia e muitas pessoas perderam
+                seus empregos e não tinham como sustentar suas famílias. Mesmo
+                assim, conseguimos coletar até brinquedo para as crianças.
+              </p>
+            </div>
           </div>
         </div>
         <div className="row">
