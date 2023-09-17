@@ -1,5 +1,5 @@
-/* globals.css */
-/* styles/globals.css */
+@import 'typeface-bebas-neue/index.css';
+@import 'typeface-roboto/index.css';
 
 body {
   margin: 0;
@@ -7,6 +7,25 @@ body {
   background-image: url('/01.webp');
 
   background-size: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+li,
+i,
+a,
+span,
+div {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
 
 .bordered-text {

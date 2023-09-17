@@ -25,8 +25,8 @@ const EsseAno = () => {
           <Image
             src="/kit.png"
             alt="Foto do kit da Chácara"
-            width={1080}
-            height={1080}
+            width={800}
+            height={800}
             layout="responsive"
           />
         </div>
@@ -41,49 +41,60 @@ const EsseAno = () => {
               de agradecimento aos 100 primeiros que doarem R$ 20,00 em doces ou
               em dinheiro, terá direito a um número da sorte.
             </p>
-            <p>O prêmio será um kit de festa personalizado!!</p>
+            <p>
+              O prêmio será um kit de festa personalizado fornecido por{' '}
+              <strong>RR-GOMES</strong> e <strong>TRIGOLAT</strong>
+            </p>
+            <p>
+              Todos os kits serão personalizados, você escolhe o tema e
+              queriados amigos irão montar e entregar, um verdadeiro kit de
+              festa
+            </p>
           </div>
         </div>
       </div>
+
       <div className="pt-5 pb-5"></div>
       <div className="row">
+        <h2 className="text-center teste">Confira TUDO o que vem no kit</h2>
         <div className="col-md-6">
           <div className="bordered-text text-center">
-            <ol>
-              <li>
+            <ol className="list-inline">
+              <li className="list-inline-item mx-5">
                 <i className="bi bi-cake"></i> 1 bolo de 1kg
               </li>
-              <li>
+              <li className="list-inline-item">
                 <i className="bi bi-box-seam"></i> 100 salgados
               </li>
-              <li>
+              <li className="list-inline-item">
                 <i className="bi bi-box-seam"></i> 100 doces
               </li>
-              <li>
+              <li className="list-inline-item">
                 <i className="bi bi-award"></i> Topo de bolo
               </li>
-              <li>
+              <li className="list-inline-item">
                 <i className="bi bi-box"></i> 6 caixas de milk
               </li>
             </ol>
           </div>
         </div>
+        <h3 className="text-center pt-2"> Ainda vem</h3>
         <div className="col-md-6">
           <div className="bordered-text text-center">
-            <ol start="6">
-              <li>
-                <i className="bi bi-box"></i> 6 caixas pirâmide
+            <ol className="list-inline " start="6">
+              <li className="list-inline-item mx-5">
+                <i className="bi bi-box mx-"></i> 6 caixas pirâmide
               </li>
-              <li>
+              <li className="list-inline-item mx-5">
                 <i className="bi bi-images"></i> Trio de painel
               </li>
-              <li>
+              <li className="list-inline-item">
                 <i className="bi bi-table"></i> 2 displays de mesa
               </li>
-              <li>
+              <li className="list-inline-item">
                 <i className="bi bi-flag"></i> Bandeirola
               </li>
-              <li>
+              <li className="list-inline-item">
                 <i className="bi bi-stars"></i> 20 toppers de docinho
               </li>
             </ol>
@@ -96,43 +107,89 @@ const EsseAno = () => {
         <div className="">
           <p>
             Assim que escolher um número disponível, você será mandado
-            diretamente ao whatsapp da Renata, que está fazendo o controle dos
-            números.
+            diretamente ao <strong>whatsapp da Renata</strong> , que está
+            fazendo o controle dos números.
           </p>
         </div>
         <div className="">
           <p>
             Ela irá reservar o seu número, não se preocupe se o número aparecer
-            como disponível após selecionar, o controle será feito por ela.
+            como disponível após selecionar, o controle será feito diretamente
+            por ela.
           </p>
         </div>
         <div className="">
           <p>
-            O sorteio será gravado e você pode acompanhar diretamente com ela.
+            O sorteio será gravado e você pode acompanhar diretamente no dia.
           </p>
         </div>
         <div className="divided-paragraph">
-          <p className="lead">
+          <p className="teste text-center">
             Escolha agora o seu número, e ajude a fazer um dia das crianças mais
-            feliz para as crianças da Comunidade do Caqui.
+            feliz para os pequenos da chácara da esperança!
           </p>
         </div>
       </div>
-      <div className="pt-5"></div>
-      <div className="d-flex flex-wrap justify-content-center cartela pt-5 bg-white">
-        {Array.from({ length: 100 }, (_, i) => i + 1).map((numero) => (
-          <div
-            key={numero}
-            className={`numero m-2 border rounded ${
-              pegos.includes(numero) ? 'bg-secondary inativo' : ''
-            }`}
-            onClick={() => handleNumeroClick(numero)}
-            style={{ fontWeight: 'bold', color: 'blue' }}
-          >
-            {pegos.includes(numero) ? 'X' : numero}
-          </div>
-        ))}
+      <div className="row">
+        <h2 className="text-center pt-5 teste">Escolha um número</h2>
+        <div className="blue-divider"></div>
       </div>
+      <div className="bordered-text">
+        <div className="row">
+          {Array.from({ length: 100 }, (_, i) => (
+            <button
+              key={i}
+              className={`numero ${
+                pegos.includes(i + 1) ? 'btn-disable' : 'btn-enable'
+              }`}
+              onClick={() => handleNumeroClick(i + 1)}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </div>
+      </div>
+      <style jsx>{`
+        .container {
+          margin-top: 70px;
+        }
+        .teste {
+          font-family: 'Lobster Two', cursive;
+        }
+        .blue-divider {
+          width: 200px;
+          height: 5px;
+          background-color: #1d72b8;
+          margin: 10px auto;
+        }
+        .bordered-text {
+          border: 2px solid #1d72b8;
+          padding: 30px;
+          margin: 10px;
+        }
+        .divided-paragraph {
+          border-top: 2px solid #1d72b8;
+          padding-top: 20px;
+          margin-top: 20px;
+        }
+        .numero {
+          width: 60px;
+          height: 60px;
+          font-size: 24px;
+          margin: 5px;
+          cursor: pointer;
+          border: none;
+        }
+        .btn-enable {
+          background-color: #1d72b8;
+          color: white;
+        }
+        .btn-disable {
+          background-color: red;
+          color: green;
+          cursor: not-allowed;
+        }
+      `}</style>
     </section>
   );
 };

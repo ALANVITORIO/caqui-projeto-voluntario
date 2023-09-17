@@ -8,10 +8,10 @@ export default function Finalizar() {
         <div className="row justify-content-center align-items-center vh-100">
           <div className="col text-center">
             <Image
-              src="/caminho/para/a/imagem/do/palhaco.jpg"
+              src="/fuinha.png"
               alt="Palhaço Fuinha"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
             <p>
               Ajude o palhaço Fuinha, o palhaço mais sem graça do Brasil, a
