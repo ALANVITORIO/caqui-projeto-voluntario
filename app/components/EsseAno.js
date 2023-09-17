@@ -23,7 +23,7 @@ const EsseAno = () => {
       <div className="row">
         <div className="col-md-6">
           <Image
-            src="/kit.png"
+            src="/kit.jpg"
             alt="Foto do kit da Chácara"
             width={800}
             height={800}
@@ -78,7 +78,7 @@ const EsseAno = () => {
             </ol>
           </div>
         </div>
-        <h3 className="text-center pt-2"> Ainda vem</h3>
+
         <div className="col-md-6">
           <div className="bordered-text text-center">
             <ol className="list-inline " start="6">

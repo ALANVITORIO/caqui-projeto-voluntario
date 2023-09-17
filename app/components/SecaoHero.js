@@ -32,7 +32,7 @@ const SecaoHero = () => {
           style={{
             fontSize: '2rem',
             fontFamily: "'Comic Sans MS', cursive, sans-serif",
-            color: '#F5FDFF',
+            color: 'black',
             textShadow: '2px 2px 5px rgba(0, 0, 0, 8)', // Borda nas letras
           }}
         >
@@ -47,7 +47,8 @@ const SecaoHero = () => {
           style={{
             fontSize: '1.8rem',
             fontFamily: "'Comic Sans MS', cursive, sans-serif",
-            textShadow: '2px 2px 1px rgba(245, 253, 255, .8)', //
+            color: 'white-smoke',
+            textShadow: '2px 2px 1px rgba(245, 253, 255, .6)', //
 
             fontWeight: 'bold',
           }}

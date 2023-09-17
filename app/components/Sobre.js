@@ -56,6 +56,9 @@ export default function Sobre() {
                 height={801} // Tamanho original da imagem
                 className="responsive-img"
               />
+              <p className="lead">
+                Comunidade do caqui no dia da desapropriação de posse
+              </p>
             </div>
           </div>
         </div>

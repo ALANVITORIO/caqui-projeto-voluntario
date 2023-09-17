@@ -7,6 +7,7 @@ import EsseAno from './components/EsseAno';
 import Historia from './components/Historia';
 import Finalizar from './components/Finalizar';
 import Divider from './components/Divider';
+import Footer from './Footer';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Divider />
         <Finalizar />
         <Divider />
+        <Footer />
       </div>
     </main>
   );

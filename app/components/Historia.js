@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Historia = () => {
   return (
     <section id="Historia" className="container">
-      <h2 className="text-center pt-5">Principais contribuintes</h2>
+      <h2 className="text-center pt-5 teste">Principais contribuintes</h2>
       <div className="blue-divider"></div>
 
       <div className="row">
