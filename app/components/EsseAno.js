@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Divider from './Divider';
 
 const EsseAno = () => {
   const [pegos, setPegos] = useState([1]);

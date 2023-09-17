@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('/01.webp');
+  background-size: cover;
 }
 h1,
 h2,
