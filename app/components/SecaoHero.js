@@ -5,12 +5,18 @@ const SecaoHero = () => {
   const paddingTopMobile =
     typeof window !== 'undefined' && window.innerWidth <= 768 ? 'pt-5' : '';
 
+  const whatsappNumber = '11974117799';
+  const text = 'Olá, eu quero ajudar no Projeto Dia das Crianças 2023!';
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    text,
+  )}`;
+
   return (
     <div
       className={`bg-primary text-white d-flex flex-column justify-content-between align-items-center ${paddingTopMobile}`}
       style={{
         height: '80vh',
-        backgroundImage: `url('/background.png')`,
+        backgroundImage: `url('/background.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -55,14 +61,16 @@ const SecaoHero = () => {
         >
           Ajude a fazer um Dia das Crianças mais feliz
         </p>
-        <button
-          className="btn btn-success mb-5"
-          style={{
-            fontSize: '1.2rem',
-          }}
-        >
-          QUERO AJUDAR
-        </button>
+        <a href={whatsappURL} target="_blank" rel="noopener noreferrer">
+          <button
+            className="btn btn-success mb-5"
+            style={{
+              fontSize: '1.2rem',
+            }}
+          >
+            QUERO AJUDAR
+          </button>
+        </a>
       </div>
     </div>
   );

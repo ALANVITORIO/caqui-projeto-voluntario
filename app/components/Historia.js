@@ -15,7 +15,7 @@ const Historia = () => {
           <div className="d-flex justify-content-center align-items-center flex-column flex-md-row">
             <div className="col-6 col-md-3">
               <Image
-                src="/rr.jpg"
+                src="/rr.webp"
                 alt="Logo de rrgomes.toposdeboloabc"
                 width={250}
                 height={250}
@@ -50,7 +50,7 @@ const Historia = () => {
           <div className="d-flex justify-content-center align-items-center flex-column flex-md-row">
             <div className="col-6 col-md-3">
               <Image
-                src="/trigo.jpg"
+                src="/trigo.webp"
                 alt="Logo de trigolat"
                 width={250}
                 height={250}

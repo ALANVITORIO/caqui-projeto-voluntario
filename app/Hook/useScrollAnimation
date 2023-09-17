@@ -1,0 +1,38 @@
+import { useEffect } from 'react';
+
+export const useScrollAnimation = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elementsLeft = document.querySelectorAll('.fade-in.left');
+      const elementsRight = document.querySelectorAll('.fade-in.right');
+
+      elementsLeft.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8) {
+          element.classList.add('final');
+          element.classList.remove('active-left');
+        } else {
+          element.classList.remove('final');
+          element.classList.add('active-left');
+        }
+      });
+
+      elementsRight.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8) {
+          element.classList.add('final');
+          element.classList.remove('active-right');
+        } else {
+          element.classList.remove('final');
+          element.classList.add('active-right');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+};

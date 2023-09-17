@@ -11,7 +11,7 @@ export default function Finalizar() {
           <div className="col text-center image-container">
             <div className="rounded-image">
               <Image
-                src="/fuinha.png"
+                src="/fuinha.webp"
                 alt="Palhaço Fuinha"
                 width={900}
                 height={520}

@@ -11,7 +11,7 @@ const EsseAno = () => {
   const handleNumeroClick = (numero) => {
     if (!pegos.includes(numero)) {
       setPegos([...pegos, numero]);
-      window.location.href = `https://api.whatsapp.com/send?text=Eu quero o número ${numero}`;
+      window.location.href = `https://api.whatsapp.com/send?phone=+5511974117799&text=Eu quero o número ${numero}`;
     }
   };
 
@@ -23,7 +23,7 @@ const EsseAno = () => {
       <div className="row">
         <div className="col-md-6">
           <Image
-            src="/kit.jpg"
+            src="/kit.webp"
             alt="Foto do kit da Chácara"
             width={800}
             height={800}
@@ -35,11 +35,12 @@ const EsseAno = () => {
           <p className="text-center lead">
             Esse ano nós vamos fazer diferente, vamos fazer uma rifa.
           </p>
-          <div className="divided-paragraph bordered-text">
+          <div className="divided-paragraph bordered-text ">
             <p>
               Para ajudar nesse ano, em colaboração com a trigolat, como forma
-              de agradecimento aos 100 primeiros que doarem R$ 20,00 em doces ou
-              em dinheiro, terá direito a um número da sorte.
+              de agradecimento aos 100 primeiros que doarem{' '}
+              <strong> R$ 20,00 em doces ou em dinheiro,</strong> terá direito a
+              um número da sorte.
             </p>
             <p>
               O prêmio será um kit de festa personalizado fornecido por{' '}
@@ -56,7 +57,7 @@ const EsseAno = () => {
 
       <div className="pt-5 pb-5"></div>
       <div className="row">
-        <h2 className="text-center teste">Confira TUDO o que vem no kit</h2>
+        <h2 className="text-center teste">Confira que kit festa incrível</h2>
         <div className="col-md-6">
           <div className="bordered-text text-center">
             <ol className="list-inline">
@@ -117,6 +118,10 @@ const EsseAno = () => {
             como disponível após selecionar, o controle será feito diretamente
             por ela.
           </p>
+          <p>
+            Lembre-se para concorrer é preciso contribuir com{' '}
+            <strong>20 Reais em pix, ou em doce.</strong>
+          </p>
         </div>
         <div className="">
           <p>
@@ -126,7 +131,7 @@ const EsseAno = () => {
         <div className="divided-paragraph">
           <p className="teste text-center">
             Escolha agora o seu número, e ajude a fazer um dia das crianças mais
-            feliz para os pequenos da chácara da esperança!
+            feliz para os pequenos da comunidade do caqui!
           </p>
         </div>
       </div>
@@ -179,15 +184,26 @@ const EsseAno = () => {
           margin: 5px;
           cursor: pointer;
           border: none;
+          border-radius: 50%;
+          outline: none;
         }
         .btn-enable {
           background-color: #1d72b8;
           color: white;
         }
+        .btn-enable:hover {
+          background-color: #155a8a;
+          color: white;
+          transform: scale(1.1);
+        }
         .btn-disable {
           background-color: red;
           color: green;
           cursor: not-allowed;
+        }
+        .btn-disable:hover {
+          background-color: darkred;
+          color: lightgreen;
         }
       `}</style>
     </section>

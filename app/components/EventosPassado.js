@@ -1,6 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 
+import { useEffect } from 'react';
+import { useScrollAnimation } from '../Hook/useScrollAnimation';
+
 import Image from 'next/image';
 import Divider from './Divider';
 
@@ -26,6 +29,7 @@ const imagensPorAno = {
 };
 
 export default function EventosPassados() {
+  useScrollAnimation();
   return (
     <section id="EventosPassados">
       <div className="container pt-5">
@@ -49,11 +53,11 @@ export default function EventosPassados() {
                 O projeto conta com diversas pessoas que se mobilizaram para
                 ajudar as familias carentes de nossa cidade.
               </p>
-              <p className="divided-paragraph">
+              <p className="divided-paragraph fade-in left">
                 A cada ano o projeto vai recebendo mais ajuda e mais pessoas se
                 conscientizando da importância de ajudar o próximo.
               </p>
-              <p className="divided-paragraph">
+              <p className="divided-paragraph fade-in right">
                 A campanha de 2020 foi particularmente difícil, pois o mundo
                 todo estava passando por uma pandemia e muitas pessoas perderam
                 seus empregos e não tinham como sustentar suas famílias. Mesmo

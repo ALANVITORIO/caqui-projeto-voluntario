@@ -1,6 +1,10 @@
 @import 'typeface-bebas-neue/index.css';
 @import 'typeface-roboto/index.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -156,4 +160,27 @@ i {
 }
 .inativo {
   color: red;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.1s, transform 0.3s;
+}
+
+.fade-in.left {
+  transform: translateX(-100%);
+}
+
+.fade-in.right {
+  transform: translateX(100%);
+}
+
+.active-left,
+.active-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+.final {
+  transform: none !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out;
 }
