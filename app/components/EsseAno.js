@@ -5,7 +5,7 @@ import Image from 'next/image';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const EsseAno = () => {
-  const [pegos, setPegos] = useState([1]);
+  const [pegos, setPegos] = useState([20, 24]);
 
   const handleNumeroClick = (numero) => {
     if (!pegos.includes(numero)) {
