@@ -6,8 +6,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const EsseAno = () => {
   const [pegos, setPegos] = useState([
-    2, 7, 9, 12, 16, 17, 19, 20, 28, 24, 25, 27, 31, 34, 37, 29, 51, 57, 59, 72,
-    74, 85, 88, 100,
+    2, 3, 7, 8, 9, 12, 16, 17, 19, 20, 28, 24, 25, 27, 31, 34, 37, 39, 29, 51,
+    57, 59, 72, 74, 85, 88, 100,
   ]);
 
   const handleNumeroClick = (numero) => {
