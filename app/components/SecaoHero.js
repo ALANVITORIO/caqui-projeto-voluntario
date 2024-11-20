@@ -42,7 +42,7 @@ const SecaoHero = () => {
             textShadow: '2px 2px 5px rgba(0, 0, 0, 8)', // Borda nas letras
           }}
         >
-          Projeto família amor eterno 2023
+          Projeto família amor eterno 2024
         </p>
       </div>
 

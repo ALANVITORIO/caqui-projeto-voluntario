@@ -22,6 +22,21 @@ export default function Finalizar() {
               Vamos fazer como o palhaço fuinha, o palhaço mais sem graça do
               Brasil, a fazer um feliz dia das crianças
             </p>
+
+            {/* Nova seção de prestação de contas */}
+            <div className="prestacao-contas">
+              <h2>Nossa prestação de contas</h2>
+              <div className="instagram-embed">
+                <iframe
+                  src="https://www.instagram.com/p/DA6qXaQxKFJ/embed"
+                  width="100%"
+                  height="450"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowtransparency="true"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -42,6 +57,23 @@ export default function Finalizar() {
           .image-container {
             max-width: 500px;
           }
+        }
+        .prestacao-contas {
+          margin: 3rem auto;
+          text-align: center;
+          max-width: 600px;
+        }
+        .prestacao-contas h2 {
+          margin-bottom: 1.5rem;
+          font-size: 1.8rem;
+          color: #333;
+        }
+        .instagram-embed {
+          position: relative;
+          width: 100%;
+          background: #f8f8f8;
+          border-radius: 8px;
+          overflow: hidden;
         }
       `}</style>
     </section>
